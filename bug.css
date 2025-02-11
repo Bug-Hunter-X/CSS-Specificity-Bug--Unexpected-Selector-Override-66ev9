@@ -1,0 +1,11 @@
+The following CSS code snippet demonstrates an uncommon error where the specificity of selectors unexpectedly overrides the intended styling.  The `.container` class is initially styled, but the more specific `div.container` selector then overrides it, even though it seems redundant. This can be difficult to debug because the issue lies in the subtle difference in selector specificity. 
+
+```css
+.container {
+  background-color: lightblue;
+}
+
+div.container {
+  background-color: lightcoral;
+}
+```
