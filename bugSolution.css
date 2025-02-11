@@ -1,0 +1,14 @@
+To solve this issue, you need to either remove the redundant selector or adjust the selectors to reflect the correct level of specificity.  One approach is to remove the redundant more specific selector entirely if the styling is the same.
+
+If the intention was to have different styles for `.container` depending on whether it's a div, it would be better to use a different class name for that variation instead of relying on element selector.  
+
+Here's the corrected CSS:
+
+```css
+.container {
+  background-color: lightblue;
+}
+/* Remove the redundant selector or add a new class for specific div styling */
+```
+
+In this case, removing the `div.container` entirely and leaving only the `.container` selector ensures that the original styling applies consistently.
